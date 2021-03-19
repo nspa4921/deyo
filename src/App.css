@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 :root{
-  --primary-white: #fff;
+  --primary-white: #ffffff;
+  --primary-light-grey: #40688f41;
   --primary-green: #39ff14;
-  --primary-dark: rgba(255,255,255,0);
+  --primary-dark: rgb(52,58, 64);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501; 
 
@@ -155,7 +156,7 @@ nav ul li {
 
 .about-heading {
   /* color: var(--primary-green); */
-  color: rgba(3, 169, 252);
+  color: #00285E;
   text-transform: uppercase;
 }
 
@@ -163,4 +164,66 @@ nav ul li {
   .profile-img {
     width: 10rem;
   }
+}
+
+/*************************** SERVICES *******************/
+
+.services {
+  text-align: center;
+  padding-bottom: 2rem;
+  background: var(--primary-light-grey);
+}
+
+.services h1 {
+  /* color: var(--primary-dark); */
+  /* color: rgba(3, 169, 252); */
+  color: #00285E;
+  text-transform: uppercase;
+}
+
+.services .circle {
+  position: relative;
+  margin: 0.375rem auto;
+  /* background: rgba(3, 169, 252); */
+  /* background: var(--primary-green); */
+  background: #00285E;
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.services .icon {
+  font-size: 1.4rem;
+  color: var(--primary-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: 3px #00285E;;
+}
+
+.services .box {
+  height: 16rem;
+  /* border-bottom: 0.3125rem solid var(--primary-green); */
+  border-bottom: 0.3125rem solid #00285E;
+  padding: 0.625rem;
+  margin-bottom: 1.875rem;
+  background: var(--primary-white);
+}
+
+.services .box:hover {
+  background: var(--primary-green);
+  border-bottom: 0.3125rem solid #00285E;
+}
+
+.services .box:hover .icon {
+  color: #00285E;
+  /* color: rgba(3, 169, 252);  - just example*/ 
+}
+
+.services .box:hover .circle {
+  background: var(--primary-white);
+}
+.services .box:hover p {
+  color: var(--primary-white);
 }

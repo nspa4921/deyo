@@ -7,7 +7,7 @@ const AboutMe = () => {
             <div className="row">
                 <div className="col-lg-6 col-xm-12">
                     <div className="photo-wrap mb-5">
-                    <img style={{width: "500px"}}  src={author} alt="author..." />
+                    <img style={{width: "340px"}}  src={author} alt="author..." />
                     </div>
                 </div>
                 <div className="col-lg-6 col-xm-12">
