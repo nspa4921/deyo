@@ -1,5 +1,6 @@
 import React from "react";
 import Typed from "react-typed";
+
 const Header = () => {
     return (
         <div className="header-wrapper">
