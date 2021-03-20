@@ -281,7 +281,7 @@ nav ul li {
 
 .experience h1 {
   text-transform: uppercase;
-  color: var(--primary-green);
+  color: var(--primary-blue);
 }
 
 .experience-wrapper::before {
@@ -318,7 +318,7 @@ nav ul li {
   height: 1rem;
   border-radius: 50%;;
   border: 0.3125rem solid var(--primary-dark);
-  background: var(--primary-orange);
+  background: var(--primary-green);
   margin-top: 0.625rem;
   z-index: 3;
 }
@@ -365,12 +365,12 @@ nav ul li {
 }
 
 .portfolio-wrapper h1 {
-  color: var(--primary-green);
+  color: var(--primary-blue);
 }
 
 .portfolio-image {
   width: 15rem;
-  border: 1px solid var(--primary-green);
+  border: 1px solid var(--primary-blue);
   padding: 0 0.5rem;
 }
 
@@ -419,7 +419,7 @@ nav ul li {
 
 .hyper-link {
   cursor: pointer; 
-  color: var(--primary-orange);
+  color: var(--primary-green);
 }
 
 .hyper-link:hover {
@@ -531,15 +531,38 @@ nav ul li {
 }
 
 .contacts h1 {
-  color: var(--primary-orange);
+  color: var(--primary-green);
   padding: 1.3rem 0;
   text-transform: uppercase;
+}
+
+.contacts .p {
+  color: var(--primary-white);
 }
 
 .contacts p {
   color: var(--primary-light-grey);
   font-size: 1.2rem;
 }
+
+.btn-contact-offer {
+  border: 1px solid var(--primary-grey);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem ;
+  color: var(--primary-white);
+  margin: 2rem;
+}
+
+.btn-contact-offer:hover {
+  text-decoration:none;
+  background-color: var(--primary-green);
+  color:var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+  transition: .2s ease-in-out;
+}
+
+
 
 /*------------------ INPUTS -------------------------------*/
 .contacts input, .contacts textarea {
@@ -550,7 +573,7 @@ nav ul li {
   border: 0;
   border-bottom: 0.125rem solid var(--primary-dark-grey);
   border-radius: 0;
-  color: var(--primary-orange);
+  color: var(--primary-green);
   outline: 0 !important;
   box-shadow: none !important;
   margin-bottom: 1rem;
@@ -563,7 +586,7 @@ nav ul li {
 
 .contacts input:focus, .contacts textarea:focus {
   background: transparent;
-  color: var(--primary-orange);
+  color: var(--primary-green);
   border-bottom: 0.125rem solid var(--primary-dark-grey);
 }
 
@@ -582,7 +605,7 @@ nav ul li {
   top: -0.8rem;
   width: 0;
   height: 0.125rem;
-  background: var(--primary-orange);
+  background: var(--primary-green);
   display: inline-block;
 }
 
@@ -639,7 +662,7 @@ textarea.form-control {
 
 .footer a:hover {
   text-decoration: none;
-  color: var(--primary-orange);
+  color: var(--primary-green);
   cursor:pointer;
 }
 
