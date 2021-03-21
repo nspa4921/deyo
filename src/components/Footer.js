@@ -29,18 +29,18 @@ const Footer = () => {
           <div className="col-lg-3 col-md-2 col-sm-6">
             <div className="row">
               <div className="col">
-                <a href="#" className="footer-nav">Home</a>
-                <br />
-                <a href="#"className="footer-nav">About me</a>
-                <br />
-                <a href="#"className="footer-nav">Services</a>
+                <p className="footer-nav">Home</p>
+                
+                <p className="footer-nav">About me</p>
+                
+                <p className="footer-nav">Services</p>
               </div>
               <div className="col">
-                <a href="#"className="footer-nav">Experience</a>
-                <br />
-                <a href="#" className="footer-nav">Portfolio</a>
-                <br />
-                <a href="#"className="footer-nav">Contacts</a>
+              <p className="footer-nav">Experience</p>
+                
+                <p className="footer-nav">Portfolio</p>
+                
+                <p className="footer-nav">Contact me</p>
               </div>
             </div>
           </div>
