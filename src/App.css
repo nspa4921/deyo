@@ -74,7 +74,7 @@ nav ul li {
   position: relative;
   background: url(./me.png) no-repeat;
   background-color:var(--primary-transparent-blue);
-  background-size: 520px;
+  background-attachment:fixed;
   background-position: right bottom;
   height: 100vh;
 }
