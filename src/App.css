@@ -408,7 +408,7 @@ h2 .outline-text {
 }
 
 .portfolio-image-box:hover .overflow {
-  opacity: 60%;
+  opacity: 50%;
   transition: 0.3s ease-in-out;
 }
 
