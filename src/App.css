@@ -14,7 +14,7 @@
   --primary-transparent-black: rgba(0,0,0,0.7);
   --primary-transparent-blue: rgba(0, 33, 90, 0.7);
 
-
+  /* --primary-blue: #0053BC; */
 }
 
 body {
@@ -122,6 +122,68 @@ nav ul li {
     font-size: 1.3rem !important; 
 
   }
+}
+
+
+@media(max-width: 468px) {
+  .header-wrapper {
+    position: relative;
+    background: url(./me.png) no-repeat;
+    background-color:var(--primary-dark-grey);
+    background-size: 360px;
+    background-position: bottom;
+    height: 90vh;
+  }
+
+  .main-info {
+    display: flex;
+    position: absolute;
+    top: 350px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .typed-text {
+    font-size: 1.3rem !important; 
+
+  }
+}
+
+@media(max-width: 320px) {
+  .header-wrapper {
+    position: relative;
+    background: url(./me.png) no-repeat;
+    background-color:var(--primary-dark-grey);
+    background-size: 300px;
+    background-position: bottom;
+    height: 90vh;
+  }
+
+  .main-info {
+    display: flex;
+    position: absolute;
+    top: 290px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .typed-text {
+    font-size: 1.1rem !important; 
+
+  }
+
 }
 
 .main-info h1 {
@@ -407,10 +469,10 @@ h2 .outline-text {
   cursor: pointer;
 }
 
-.a div.overflow:hover {
+/* .a div.overflow:hover {
   opacity: 60%;
   transition: 0.3s ease-in-out;
-}
+} */
 
 .portfolio-image-box:hover .overflow {
   opacity: 60%;
