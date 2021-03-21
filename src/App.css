@@ -60,8 +60,8 @@ nav ul li {
   }
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-  border-top: 0.1875rem solid var(--primary-green); 
+.navbar-nav > li > a.active,  .navbar-nav > li > a:focus {
+  border-top: 0.1875rem solid var(--primary-green);
 }
 
 .navbar-nav > li > a:hover {
@@ -73,10 +73,10 @@ nav ul li {
 .header-wrapper {
   position: relative;
   background: url(./me.png) no-repeat;
-  background-color:var(--primary-dark-grey);
-  background-size: 540px;
+  background-color:var(--primary-transparent-blue);
+  background-size: 520px;
   background-position: right bottom;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -129,6 +129,21 @@ nav ul li {
   text-transform: uppercase;
 }
 
+h2 .outline-text {
+  font-size: 90px;
+    display: block;
+    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: transparent;
+}
+
+@media(max-width: 768px) {
+  h2 .outline-text {
+    font-size: 32px;
+      display: block;
+      -webkit-text-stroke: 1px #fff;
+      -webkit-text-fill-color: transparent;
+  }
+}
 
 /*************************** Typed text *******************/
 
@@ -162,6 +177,7 @@ nav ul li {
   text-decoration:none;
   background-color: var(--primary-hover-red);
   transition: .2s ease-in-out;
+  color: var(--primary-white);
 }
 
 .tsparticles-canvas-el {
@@ -668,4 +684,28 @@ textarea.form-control {
 
 .footer p {
   margin-bottom: 0;
+}
+
+/************************ FOOTER COMPONENT *********************************/
+.footer {
+  background: var(--primary-grey);
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor:pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
+  padding: 0.5rem;
+
 }
