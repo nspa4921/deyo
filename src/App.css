@@ -407,6 +407,11 @@ h2 .outline-text {
   cursor: pointer;
 }
 
+.a div.overflow:hover {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
 .portfolio-image-box:hover .overflow {
   opacity: 60%;
   transition: 0.3s ease-in-out;
