@@ -10,7 +10,7 @@
   --primary-dark: rgb(52,58, 64);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501; 
-  --primary-blue: #00285E;
+  --primary-blue: #00285E; 
   --primary-transparent-black: rgba(0,0,0,0.7);
   --primary-transparent-blue: rgba(0, 33, 90, 0.7);
 
@@ -75,6 +75,7 @@ nav ul li {
   background: url(./me.png) no-repeat;
   background-color:var(--primary-transparent-blue);
   background-attachment:fixed;
+  background-size: 60vh;
   background-position: right bottom;
   height: 100vh;
 }
@@ -94,12 +95,11 @@ nav ul li {
   z-index: 1;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1285px) {
   .header-wrapper {
     position: relative;
     background: url(./me.png) no-repeat;
     background-color:var(--primary-dark-grey);
-    background-size: auto;
     background-position: bottom;
     height: 90vh;
   }
@@ -107,7 +107,36 @@ nav ul li {
   .main-info {
     display: flex;
     position: absolute;
-    top: 300px;
+    top: 400px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .typed-text {
+    font-size: 1rem !important; 
+
+  }
+}
+
+@media(max-width: 768px) {
+  .header-wrapper {
+    position: relative;
+    background: url(./me.png) no-repeat;
+    background-color:var(--primary-dark-grey);
+    background-position: bottom;
+    height: 90vh;
+  }
+
+  .main-info {
+    display: flex;
+    position: absolute;
+    top: 450px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -130,7 +159,7 @@ nav ul li {
     position: relative;
     background: url(./me.png) no-repeat;
     background-color:var(--primary-dark-grey);
-    background-size: 360px;
+    background-size: 50vh;
     background-position: bottom;
     height: 90vh;
   }
@@ -138,7 +167,7 @@ nav ul li {
   .main-info {
     display: flex;
     position: absolute;
-    top: 350px;
+    top: 400px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -153,6 +182,7 @@ nav ul li {
     font-size: 1.3rem !important; 
 
   }
+
 }
 
 @media(max-width: 320px) {
@@ -281,6 +311,7 @@ h2 .outline-text {
     width: 10rem;
   }
 }
+
 
 /*************************** SERVICES *******************/
 
@@ -438,8 +469,11 @@ h2 .outline-text {
 
 /************************ PORTFOLIO *********************************/
 .portfolio-wrapper {
-  background: var(--primary-light-grey);
   padding: 3rem 0;
+  position: relative;
+  background: var(--primary-light-grey) url(./images/me2.png) no-repeat;
+  background-size: 240px;
+  background-position: right bottom;
 }
 
 .portfolio-wrapper h1 {
@@ -456,6 +490,7 @@ h2 .outline-text {
   position: relative;
   margin: 1rem;
 }
+
 
 /*------------ OVERFLOW BOX ------------------*/
 .overflow {
@@ -733,36 +768,14 @@ textarea.form-control {
 
 /************************ FOOTER COMPONENT *********************************/
 .footer {
-  background: var(--primary-black);
-  color: var(--primary-dark-grey);
+  background: var(--primary-blue);
+  color: var(--primary-white);
   padding: 3rem;
 }
 
 .footer a {
   text-decoration: none;
-  color: var(--primary-dark-grey);
-}
-
-.footer a:hover {
-  text-decoration: none;
-  color: var(--primary-green);
-  cursor:pointer;
-}
-
-.footer p {
-  margin-bottom: 0;
-}
-
-/************************ FOOTER COMPONENT *********************************/
-.footer {
-  background: var(--primary-grey);
-  color: var(--primary-dark-grey);
-  padding: 3rem;
-}
-
-.footer a {
-  text-decoration: none;
-  color: var(--primary-dark-grey);
+  color: var(--primary-white);
 }
 
 .footer a:hover {
@@ -776,3 +789,44 @@ textarea.form-control {
   padding: 0.5rem;
 
 }
+
+/* -----------------Fade in up------------------------*/
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+

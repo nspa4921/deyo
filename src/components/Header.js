@@ -5,8 +5,8 @@ const Header = () => {
     return (
         <div id="home" className="header-wrapper">
             <div className="main-info">
-            <h2><span class="outline-text">DEJAN MLADENOVIC</span></h2>
-                 <h2 style={{ color: "rgba(3, 169, 252)"}}> BASKETBALL COACH!!</h2>
+            <h2><span class="outline-text animated animatedFadeInUp fadeInUp">DEJAN MLADENOVIC</span></h2>
+                 <h2 style={{ color: "rgba(3, 169, 252)"}} className="animated animatedFadeInUp fadeInUp"> BASKETBALL COACH!</h2>
                 <Typed 
                 className="typed-text"
                 strings={["Individaul Trainings", "Motor skills", "Techical skills"]}
