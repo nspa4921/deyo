@@ -8,17 +8,22 @@
   --primary-dark-grey: #666666;
   --primary-green: #39ff14;
   --primary-dark: rgb(52,58, 64);
-  --primary-red: #ef4035;
+  --primary-red: #ff0000;
   --primary-hover-red: #f33501; 
   --primary-blue: #00285E; 
   --primary-transparent-black: rgba(0,0,0,0.7);
-  --primary-transparent-blue: rgba(0, 33, 90, 0.7);
+  --primary-transparent-blue: rgba(0, 1, 1, 0.7);
+  --primary-black: rgba(0, 0, 0, 0.951);
 
   /* --primary-blue: #0053BC; */
 }
 
+.bg-black {
+  background-color: var(--primary-black);
+}
+
 body {
-  font-family: "Roboto Condesed", sans-serif;
+  font-family: "Roboto Condesed", sans-serif; 
 }
 /*************************** Deyo NAVBAR *******************/
 
@@ -51,7 +56,7 @@ nav ul li {
 .navbar-brand {
   max-width: 17.25rem;
   padding: 0 !important;
-  height: 6rem !important;
+  height: 7rem !important;
 }
 
 @media(max-width: 768px) {
@@ -65,7 +70,7 @@ nav ul li {
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-green);
+  border-top: 0.1875rem solid var(--primary-red);
 }
 
 /*************************** Deyo Header *******************/
@@ -313,7 +318,7 @@ h2 .outline-text {
 }
 
 
-/*************************** SERVICES *******************/
+/*************************** SERVICES / Methodology Program *******************/
 
 .services {
   text-align: center;
@@ -723,7 +728,7 @@ h2 .outline-text {
   top: -0.8rem;
   width: 0;
   height: 0.125rem;
-  background: var(--primary-green);
+  background: var(--primary-red);
   display: inline-block;
 }
 
@@ -829,4 +834,7 @@ textarea.form-control {
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
 }
+
+
+
 

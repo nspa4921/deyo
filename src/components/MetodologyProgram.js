@@ -4,10 +4,10 @@ import { faFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { faDesktop, faFileCode } from "@fortawesome/free-solid-svg-icons";
 
 
-const Services = () => {
+const MetodologyProgram = () => {
     return (
-        <div id="services" className="services">
-            <h1 className="py-5"> My services </h1>
+        <div id="metodology-program" className="services">
+            <h1 className="py-5"> Metodology Program </h1>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-3 col-md-6 col-sm-6">
@@ -55,4 +55,4 @@ const Services = () => {
     )
 }
 
-export default Services
+export default MetodologyProgram
